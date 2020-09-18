@@ -2,6 +2,10 @@
 
 This is a simple template that is a good starting point for a Laravel REST API.
 
+## Configuration
+
+Check the `.env.example` file for an example configuration and ensure you populate the JWT and RECAPTCHA configurations if they are going to be used.
+
 ## Running a Test Server
 
 Use the following command to launch the API locally using the internal PHP server.
@@ -86,3 +90,21 @@ Route::group(['middleware' => ['api', 'jwt.refresh']], function() {
     Route::post('/auth/refresh', 'Refresh@update');
 });
 ```
+
+## Controllers
+
+Included is a basic set of controllers and database schema that would allow you to create and handle users and authentication.
+
+## Deployment
+
+You would mostly deploy using git, but if you are hosting on a server that does not have this facility you can use the built in deployment script.
+
+If you want you can use the deployment script to deploy your application files via FTP. Ensure you have a `deploy.json` file configured using `deploy.example.json` as a base.
+
+Run the following command to deploy your API.
+
+```sh
+node deploy.json
+```
+
+You need to make sure that you have terminal access to the destination server so that you can execute database migrations etc.
