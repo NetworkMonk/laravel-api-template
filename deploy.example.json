@@ -1,0 +1,12 @@
+{
+  "user": "user",
+  "password": "password",
+  "host": "ftp.someserver.com",
+  "port": 21,
+  "localRoot": "./out/",
+  "remoteRoot": "/public_html/",
+  "include": [".*", "*", "**/*", "**/.*"],
+  "exclude": [],
+  "deleteRemote": true,
+  "forcePasv": true
+}
