@@ -114,3 +114,9 @@ node deploy.json
 ```
 
 You need to make sure that you have terminal access to the destination server so that you can execute database migrations etc.
+
+To migrate the database to the latest version make sure you run.
+
+```sh
+php artisan migrate
+```
