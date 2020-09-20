@@ -6,6 +6,12 @@ This is a simple template that is a good starting point for a Laravel REST API.
 
 Check the `.env.example` file for an example configuration and ensure you populate the JWT and RECAPTCHA configurations if they are going to be used.
 
+To generate a new random key that can be used for the `JWT_KEY` and `JWT_REFRESH_KEY` values you can use the following command.
+
+```sh
+php artisan key:generate --show
+```
+
 ## Running a Test Server
 
 Use the following command to launch the API locally using the internal PHP server.
