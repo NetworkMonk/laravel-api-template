@@ -127,3 +127,9 @@ To migrate the database to the latest version make sure you run.
 ```sh
 php artisan migrate
 ```
+
+You can also ensure that the configuration in cached on the production host by using the following command.
+
+```sh
+php artisan config:cache
+```
