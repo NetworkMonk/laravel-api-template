@@ -12,6 +12,13 @@ To generate a new random key that can be used for the `JWT_KEY` and `JWT_REFRESH
 php artisan key:generate --show
 ```
 
+Install composer and node dependancies by using the following two commands.
+
+```sh
+composer install
+npm install
+```
+
 ## Running a Test Server
 
 Use the following command to launch the API locally using the internal PHP server.
