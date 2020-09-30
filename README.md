@@ -108,6 +108,22 @@ Route::group(['middleware' => ['api', 'jwt.refresh']], function() {
 
 Included is a basic set of controllers and database schema that would allow you to create and handle users and authentication.
 
+## Tests
+
+You can create new tests using the following commands.
+
+Make a new feature test
+
+```sh
+php artisan make:test NewTest
+```
+
+Make a new unit test
+
+```sh
+php artisan make:test NewTest --unit
+```
+
 ## Deployment
 
 You would mostly deploy using git, but if you are hosting on a server that does not have this facility you can use the built in deployment script.
